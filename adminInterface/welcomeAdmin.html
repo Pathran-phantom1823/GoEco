@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <meta name="google-signin-client_id"
+        content='446700921151-rmegka4s2bi42ahdvuu6hb1ppv78ma9b.apps.googleusercontent.com'>
+    <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
+
+    <title>Document</title>
+</head>
+
+<body id="welcomeDashboard" style="background-image: url('bg.jpg')">
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <h2 class="ui center aligned icon header">
+            <i class="circular user icon"></i>
+            Admin
+        </h2>
+        <a href="#">Account</a>
+        <a href="#">About</a>
+        <Center>
+            <a href="#" onclick="signOut();"><button type="button" class="btn btn-outline-info"><i
+                        class='fas fa-sign-out' style='font-size:20px'></i>&nbsp;&nbsp;SIGN OUT</button></a></center>
+        <div id="my-signin2" hidden></div>
+    </div>
+
+    <div id="main">
+        <div class="ui secondary pointing menu" id="head">
+            <a class="item">
+                <i onclick="openNav()" class="list ul icon" id="listIcon"></i>
+            </a>
+            <a class="item active" id="home">
+                <i class="home icon"></i>
+                Home
+            </a>
+            <a class="item" id="issue">
+                <i class="bullhorn icon"></i>
+                Issue
+            </a>
+            <a class="item" id="project">
+                <i class="handshake outline icon"></i>
+                Projects
+            </a>
+
+            <div class="right menu">
+                <a class="item" id="notify" data-toggle="modal" data-target="#myModal">
+                    <i class="bell icon"></i>
+                </a>
+                <a class="ui item">
+                    <a href="loginAdmin.html">Logout</a>
+                </a>
+            </div>
+        </div>
+        <div class="ui huge segment" id="header">
+            <section>
+                <header>
+                    <h2 class="ui center aligned icon header">
+                        <img src="our_logo.png" style="width: 20%; height:40%;"><br>
+                        GoEco
+                    </h2>
+                </header>
+            </section>
+        </div>
+        <div class="ui two bottom attached buttons">
+            <div class="ui positive button"><a href="https://node-patrick-live-chat.herokuapp.com/">GoChat</a></div>
+        </div>
+    </div>
+
+    <section id="homeSection">
+        <center>
+            <div class="ui segment">
+                <div class="row">
+                    <div class="col-6">
+                        <img id="image1"
+                            src="http://northboundasia.com/wp-content/uploads/2018/07/07-26-danny-100th-mandela.jpg">
+                    </div>
+                    <div class="col-6">
+                        <div class="ui card">
+                            <div class="content">
+                                <i class="right floated like icon"></i>
+                                <i class="right floated star icon"></i>
+                                <div class="header">Tree Planting</div>
+                                <div class="description">
+                                    <p>Baragay Talamban Having<br> Their Monthly Tree Planting</p>
+                                </div>
+                            </div>
+                            <div class="extra content">
+                                <span class="left floated like">
+                                    <i class="like icon"></i>
+                                    Like
+                                </span>
+                                <span>
+                                    <button class="ui primary button"> Details</button>
+
+                                </span>
+                                <span class="right floated star">
+                                    <i class="star icon"></i>
+                                    Favorite
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ui segment">
+                <div class="row">
+                    <div class="col-6">
+                        <img id="image1"
+                            src="https://www.businessgreen.com/w-images/1196214a-4773-41e0-a32a-fa6305ff09e4/0/illegallogginghi110885-580x358.jpg">
+                    </div>
+                    <div class="col-6">
+                        <div class="ui card">
+                            <div class="content">
+                                <i class="right floated like icon"></i>
+                                <i class="right floated star icon"></i>
+                                <div class="header">Illegal Logging</div>
+                                <div class="description">
+                                    <p>Still Illegal Logging<br>Continues...</p>
+                                </div>
+                            </div>
+                            <div class="extra content">
+                                <span class="left floated like">
+                                    <i class="like icon"></i>
+                                    Like
+                                </span>
+                                <span>
+                                    <button class="ui primary button"> Details</button>
+
+                                </span>
+                                <span class="right floated star">
+                                    <i class="star icon"></i>
+                                    Favorite
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </center>
+    </section>
+    <center>
+        <section class="Issue" style="display:none">
+            <div class="ui segment">
+                <div class="ui card">
+                    <div class="ui slide masked reveal image">
+                        <img src="https://egyptianstreets.com/wp-content/uploads/2018/10/43040051_1036463789859935_5696386644756660224_n.jpg"
+                            class="visible content">
+                        <img src="http://static.dailymirror.lk/media/images/image_1497466256-3d394f82c5.jpg"
+                            class="hidden content">
+                    </div>
+                    <div class="content">
+                        <a class="header">Garbage On Street </a>
+                        <div class="meta">
+                            <span class="date">Their are lot of Grabage on Street<br>That are failed to collect</span>
+                        </div>
+                    </div>
+                    <div class="extra content">
+                        <a>
+                            <i class="center floated like icon"></i>
+                            Like
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="ui segment">
+                <div class="ui card">
+                    <div class="ui slide masked reveal image">
+                        <img src="https://sa.kapamilya.com/absnews/abscbnnews/media/2017/news/12/28/trash.jpg"
+                            class="visible content">
+                        <img src="https://horizon-media.s3-eu-west-1.amazonaws.com/s3fs-public/field/image/sea_garbage.jpg"
+                            class="hidden content">
+                    </div>
+                    <div class="content">
+                        <a class="header">Garbage On Sea </a>
+                        <div class="meta">
+                            <span class="date">Their are lot of Grabage on Sea<br>That need to Collect</span>
+                        </div>
+                    </div>
+                    <div class="extra content">
+                        <a>
+                            <i class="center floated like icon"></i>
+                            Like
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="projectSection" style="display:none">
+            <div class="ui segment">
+                <div class="ui card">
+                    <div class="image">
+                        <img src="https://blog.gardenloversclub.com/wp-content/uploads/2015/03/shoeplant.jpg">
+                    </div>
+                    <div class="content">
+                        <span class="right floated">
+                            <i class="heart outline like icon"></i>
+                            17 likes
+                        </span>
+                        <i class="comment icon"></i>
+                        3 comments
+                    </div>
+                    <div class="extra content">
+                        <div class="ui large transparent left icon input">
+                            <i class="heart outline icon"></i>
+                            <input type="text" placeholder="Add Comment...">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ui segment">
+                <div class="ui card">
+                    <div class="image">
+                        <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1sRF3bz83i-8XUsILo0YR_VChJyqaM4_Pmucpx6vWbZ7jSYVO&s">
+                    </div>
+                    <div class="content">
+                        <span class="right floated">
+                            <i class="heart outline like icon"></i>
+                            17 likes
+                        </span>
+                        <i class="comment icon"></i>
+                        3 comments
+                    </div>
+                    <div class="extra content">
+                        <div class="ui large transparent left icon input">
+                            <i class="heart outline icon"></i>
+                            <input type="text" placeholder="Add Comment...">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </center>
+    <!-- The Modal -->
+    <div class="modal" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">New Report</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="ui card">
+                        <a class="image" href="#">
+                            <i class="user icon"></i>
+                        </a>
+                        <div class="content">
+                            <a class="header" href="#">Steve Jobes</a>
+                            <div class="meta">
+                                <a>Last Seen 2 days ago</a>
+                            </div>
+                            <button class="ui primary button" data-toggle="modal" data-target="#myModal2">Open</button>
+                        </div>
+                    </div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- The Modal -->
+    <div class="modal" id="myModal2">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">New Report</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="ui card">
+                        <img
+                            src="https://i.dailymail.co.uk/i/pix/2017/10/03/20/4500CD0100000578-4945852-image-a-48_1507057778812.jpg">
+                    </div>
+                    <form class="ui form">
+                        <div class="field">
+                            <label>Name of Report</label>
+                            <p1>Grabage on River</p1>
+                        </div>
+                        <div class="field">
+                            <label>Address</label>
+                            <p1>Barangay Tubli</p1>
+                        </div>
+                        <div class="field">
+                            <label>Description</label>
+                            <textarea>Many Grabages are being left by the previous typhoon
+                            and our barangay has less equipment to collect this garbages</textarea>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+</body>
+<script>
+    function onSuccess(googleUser) {
+        console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
+    }
+
+    function onFailure(error) {
+        console.log(error);
+    }
+
+    function renderButton() {
+        gapi.signin2.render('my-signin2', {
+            'scope': 'profile email',
+            'longtitle': true,
+            'theme': 'dark',
+            'onsuccess': onSuccess,
+            'onfailure': onFailure
+        });
+    }
+
+    function signOut() {
+        var auth2 = gapi.auth2.getAuthInstance();
+        auth2.signOut().then(function () {
+            console.log('User signed out.');
+            window.location.replace('loginAdmin.html')
+            var revokeAllScopes = function () {
+                auth2.disconnect();
+            }
+        });
+    }
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+        document.body.style.backgroundColor = "rgba(255,255,255,0.4)";
+    }
+
+    /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+        document.body.style.backgroundColor = "white";
+    }
+    $(document).ready(() => {
+        $('#issue').on('click', () => {
+            $(".Issue").show();
+            $("#issue").removeClass("item").addClass("item active")
+            $('#homeSection').hide()
+            $('#home').removeClass("item active").addClass("item")
+            $('#project').removeClass('item active').addClass('item');
+            $('.projectSection').hide();
+        })
+        $('#home').on('click', () => {
+            $(".Issue").hide();
+            $("#home").removeClass("item").addClass("item active")
+            $('#homeSection').show()
+            $('#issue').removeClass("item active").addClass("item")
+            $('#project').removeClass('item active').addClass('item');
+            $('.projectSection').hide();
+        })
+
+        $('#project').on('click', () => {
+            $(".Issue").hide();
+            $("#home").removeClass("item active").addClass("")
+            $('#homeSection').hide()
+            $('#issue').removeClass("item active").addClass("item")
+            $('.projectSection').show()
+            $('#project').removeClass('item').addClass('item active');
+        })
+
+        $('#report').on('click', () => {
+            $('.ui.modal')
+                .modal('show')
+                ;
+        })
+
+        $('#submitReport').on('click', () => {
+            alert("SUBMITTED")
+        })
+
+        $('#head').mouseover(()=>{
+            $('#head').css({"background-color":"white"})
+        })
+        $('#head').mouseleave(()=>{
+            $('#head').css({"background-color":""})
+        })
+
+        // $('#notify').on('click',()=>{
+
+        // })
+
+
+
+
+    })
+
+</script>
+
+</html>

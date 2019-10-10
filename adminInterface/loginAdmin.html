@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <meta name="google-signin-client_id"
+        content='446700921151-rmegka4s2bi42ahdvuu6hb1ppv78ma9b.apps.googleusercontent.com'>
+    <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
+
+    <title>Document</title>
+</head>
+
+<body style="background-image: url('bg.jpg')">
+    <h2 class="ui center aligned icon header">
+        <img src="our_logo.png" style="width: 20%; height:40%;"><br>
+        GoEco
+    </h2>
+    <div class="container" id="logIn">
+        <div class="jumbotron">
+            <div class="ui form">
+                <div class="field">
+                    <label>Username</label>
+                    <input type="text" placeholder="Username">
+                </div>
+                <div class="field">
+                    <label>Password</label>
+                    <input type="text" placeholder="Password">
+                    <a href="welcomeAdmin.html"><button class="positive ui button">Submit</button></a>
+                    <center>
+                        <hr>OR
+                        <hr>
+                    </center>
+                    <center>
+                        <div id="my-signin2"></div>
+                    </center><br>
+                </div>
+            </div>
+            <script>
+                function onSuccess(googleUser) {
+                    window.location.replace("welcomeAdmin.html")
+                    console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
+                }
+                function onFailure(error) {
+                    console.log(error);
+                }
+
+                function renderButton() {
+                    gapi.signin2.render('my-signin2', {
+                        'scope': 'profile email',
+                        'longtitle': true,
+                        'theme': 'dark',
+                        'onsuccess': onSuccess,
+                        'onfailure': onFailure
+                    });
+                }
+
+                $(document).ready(() => {
+                    $('#signup').on('click', () => {
+                        $('#logIn').hide();
+                        $('#signUp').show();
+                    })
+                    $('#login').on('click', () => {
+                        $('#logIn').show();
+                        $('#signUp').hide();
+                    })
+                })
+            </script>
+</body>
+
+
+
+</html>
