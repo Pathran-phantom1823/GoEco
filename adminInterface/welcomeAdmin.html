@@ -27,7 +27,7 @@
             Admin
         </h2>
         <a href="#">Account</a>
-        <a href="#">About</a>
+        <a href="#"data-target="#myModal5" data-toggle="modal">About</a>
         <Center>
             <a href="#" onclick="signOut();"><button type="button" class="btn btn-outline-info"><i
                         class='fas fa-sign-out' style='font-size:20px'></i>&nbsp;&nbsp;SIGN OUT</button></a></center>
@@ -317,6 +317,75 @@
         </div>
     </div>
     </div>
+    <div class="modal" id="myModal5">
+            <div class="modal-dialog">
+                <div class="modal-content">
+    
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">Go Post</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+    
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <div class="ui link cards">
+                            <div class="card">
+                                <div class="image">
+                                    <img src="jane.jpg">
+                                </div>
+                                <div class="content">
+                                    <div class="header">Jane Repollo</div>
+                                    <div class="meta">
+                                        <a>Developer</a>
+                                    </div>
+                                    <div class="description">
+                                       Batch 2021 of Passerelles Numeriques
+                                    </div>
+                                </div>
+                                <div class="extra content">
+                                    <span class="right floated">
+                                        Joined in 2013
+                                    </span>
+                                    <span>
+                                        <i class="user icon"></i>
+                                        75 Friends
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="image">
+                                    <img src="patrick.jpg">
+                                </div>
+                                <div class="content">
+                                    <div class="header">JOhn Patrick Cabia-an</div>
+                                    <div class="meta">
+                                        <span class="date">Developer</span>
+                                    </div>
+                                    <div class="description">
+                                        Batch 2021 of Passerelles Numeriques
+                                    </div>
+                                </div>
+                                <div class="extra content">
+                                    <span class="right floated">
+                                        Joined in 2011
+                                    </span>
+                                    <span>
+                                        <i class="user icon"></i>
+                                        35 Friends
+                                    </span>
+                                </div>
+                            </div>
+    
+                        </div>
+    
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
 </body>
 <script>
