@@ -19,15 +19,15 @@
     <title>Document</title>
 </head>
 
-<body id="welcomeDashboard" style="background-image: url('bg.jpg')">
+<body id="welcomeDashboard">
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <h2 class="ui center aligned icon header">
-            <i class="circular user icon"></i>
+        <h2 class="ui center aligned icon header" style="color:white;">
+            <i class="circular user icon" ></i>
             Admin
         </h2>
         <a href="#">Account</a>
-        <a href="#"data-target="#myModal5" data-toggle="modal">About</a>
+        <a href="#" data-target="#myModal5" data-toggle="modal">About</a>
         <Center>
             <a href="#" onclick="signOut();"><button type="button" class="btn btn-outline-info"><i
                         class='fas fa-sign-out' style='font-size:20px'></i>&nbsp;&nbsp;SIGN OUT</button></a></center>
@@ -36,41 +36,38 @@
 
     <div id="main">
         <div class="ui secondary pointing menu" id="head">
-            <a class="item">
+            <a class="item"  style="color:white;">
                 <i onclick="openNav()" class="list ul icon" id="listIcon"></i>
             </a>
-            <a class="item active" id="home">
+            <a class="item active" id="home"  style="color:white;">
                 <i class="home icon"></i>
                 Home
             </a>
-            <a class="item" id="issue">
+            <a class="item" id="issue"  style="color:white;">
                 <i class="bullhorn icon"></i>
                 Issue
             </a>
-            <a class="item" id="project">
+            <a class="item" id="project"  style="color:white;">
                 <i class="handshake outline icon"></i>
                 Projects
             </a>
 
             <div class="right menu">
                 <a class="item" id="notify" data-toggle="modal" data-target="#myModal">
-                    <i class="bell icon"></i>
+                    <i class="bell icon"  style="color:white;"></i>
                 </a>
                 <a class="ui item">
                     <a href="loginAdmin.html">Logout</a>
                 </a>
             </div>
         </div>
-        <div class="ui huge segment" id="header">
-            <section>
-                <header>
-                    <h2 class="ui center aligned icon header">
-                        <img src="our_logo.png" style="width: 20%; height:40%;"><br>
-                        GoEco
-                    </h2>
-                </header>
-            </section>
-        </div>
+        <header id="headers">
+            <h2 class="ui center aligned icon header" style="font-size:50px;color:white;">
+                <img src="our_logo.png" style="width: 20%; height:40%;"><br>
+                GoEco<br>
+                <span style="font-size:30px;">Be an Eco Solution</span>
+            </h2><br><br><br><br>
+        </header><br>
         <div class="ui two bottom attached buttons">
             <div class="ui positive button"><a href="https://node-patrick-live-chat.herokuapp.com/">GoChat</a></div>
         </div>
@@ -318,74 +315,74 @@
     </div>
     </div>
     <div class="modal" id="myModal5">
-            <div class="modal-dialog">
-                <div class="modal-content">
-    
-                    <!-- Modal Header -->
-                    <div class="modal-header">
-                        <h4 class="modal-title">Go Post</h4>
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Go Post</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="ui link cards">
+                        <div class="card">
+                            <div class="image">
+                                <img src="jane.jpg">
+                            </div>
+                            <div class="content">
+                                <div class="header">Jane Repollo</div>
+                                <div class="meta">
+                                    <a>Developer</a>
+                                </div>
+                                <div class="description">
+                                    Batch 2021 of Passerelles Numeriques
+                                </div>
+                            </div>
+                            <div class="extra content">
+                                <span class="right floated">
+                                    Joined in 2013
+                                </span>
+                                <span>
+                                    <i class="user icon"></i>
+                                    75 Friends
+                                </span>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="image">
+                                <img src="patrick.jpg">
+                            </div>
+                            <div class="content">
+                                <div class="header">JOhn Patrick Cabia-an</div>
+                                <div class="meta">
+                                    <span class="date">Developer</span>
+                                </div>
+                                <div class="description">
+                                    Batch 2021 of Passerelles Numeriques
+                                </div>
+                            </div>
+                            <div class="extra content">
+                                <span class="right floated">
+                                    Joined in 2011
+                                </span>
+                                <span>
+                                    <i class="user icon"></i>
+                                    35 Friends
+                                </span>
+                            </div>
+                        </div>
+
                     </div>
-    
-                    <!-- Modal body -->
-                    <div class="modal-body">
-                        <div class="ui link cards">
-                            <div class="card">
-                                <div class="image">
-                                    <img src="jane.jpg">
-                                </div>
-                                <div class="content">
-                                    <div class="header">Jane Repollo</div>
-                                    <div class="meta">
-                                        <a>Developer</a>
-                                    </div>
-                                    <div class="description">
-                                       Batch 2021 of Passerelles Numeriques
-                                    </div>
-                                </div>
-                                <div class="extra content">
-                                    <span class="right floated">
-                                        Joined in 2013
-                                    </span>
-                                    <span>
-                                        <i class="user icon"></i>
-                                        75 Friends
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="image">
-                                    <img src="patrick.jpg">
-                                </div>
-                                <div class="content">
-                                    <div class="header">JOhn Patrick Cabia-an</div>
-                                    <div class="meta">
-                                        <span class="date">Developer</span>
-                                    </div>
-                                    <div class="description">
-                                        Batch 2021 of Passerelles Numeriques
-                                    </div>
-                                </div>
-                                <div class="extra content">
-                                    <span class="right floated">
-                                        Joined in 2011
-                                    </span>
-                                    <span>
-                                        <i class="user icon"></i>
-                                        35 Friends
-                                    </span>
-                                </div>
-                            </div>
-    
-                        </div>
-    
-                        <!-- Modal footer -->
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                        </div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
                     </div>
                 </div>
             </div>
+        </div>
 
 </body>
 <script>
@@ -466,12 +463,7 @@
             alert("SUBMITTED")
         })
 
-        $('#head').mouseover(()=>{
-            $('#head').css({"background-color":"white"})
-        })
-        $('#head').mouseleave(()=>{
-            $('#head').css({"background-color":""})
-        })
+    
 
         // $('#notify').on('click',()=>{
 

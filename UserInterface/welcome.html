@@ -12,63 +12,61 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
-    <meta name="google-signin-client_id" content='446700921151-rmegka4s2bi42ahdvuu6hb1ppv78ma9b.apps.googleusercontent.com'>
+    <meta name="google-signin-client_id"
+        content='446700921151-rmegka4s2bi42ahdvuu6hb1ppv78ma9b.apps.googleusercontent.com'>
     <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
 
     <title>Document</title>
 </head>
 
-<body style="background-image: url('bg.jpg')">
+<body>
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <h2 class="ui center aligned icon header">
-            <i class="circular user icon"></i>
+        <h2 class="ui center aligned icon header" style="color:white;">
+            <i class="circular user icon" ></i>
             User
         </h2>
         <a href="#">Account</a>
-        <a href="#"data-target="#myModal5" data-toggle="modal">About</a>
+        <a href="#" data-target="#myModal5" data-toggle="modal">About</a>
         <Center>
-            <a href="#" onclick="signOut();"><button type="button" class="btn btn-outline-info"><i class='fas fa-sign-out'
-                        style='font-size:20px'></i>&nbsp;&nbsp;SIGN OUT</button></a></center>
+            <a href="#" onclick="signOut();"><button type="button" class="btn btn-outline-info"><i
+                        class='fas fa-sign-out' style='font-size:20px'></i>&nbsp;&nbsp;SIGN OUT</button></a></center>
         <div id="my-signin2" hidden></div>
     </div>
 
     <div id="main">
-        <div class="ui secondary pointing menu" id="head">
-            <a class="item">
+        <div class="ui secondary pointing menu" id="head" >
+            <a class="item" style="color:white;">
                 <i onclick="openNav()" class="list ul icon" id="listIcon"></i>
             </a>
-            <a class="item active" id="home">
+            <a class="item active" id="home" style="color:white;">
                 <i class="home icon"></i>
-                Home
+                <h5>Home</h5>
             </a>
-            <a class="item" id="issue">
+            <a class="item" id="issue" style="color:white;">
                 <i class="bullhorn icon"></i>
-                Issue
+                <h5> Issue</h5>
             </a>
-            <a class="item" id="project">
+            <a class="item" id="project" style="color:white;">
                 <i class="handshake outline icon"></i>
-                Projects
+                <h5>Projects</h5>
             </a>
             <div class="right menu">
                 <a class="item" id="notify" data-toggle="modal" data-target="#myModal4">
-                    <i class="bell icon"></i>
+                    <i class="bell icon"  style="color:white;"></i>
                 </a>
                 <a class="ui item">
                     <a href="login.html">Logout</a>
                 </a>
             </div>
         </div>
-        <div class="ui huge segment" id="header">
-            <section>
-                <header>
-                    <h2 class="ui center aligned icon header">
-                        <img src="our_logo.png" style="width: 20%; height:40%;"><br>
-                        GoEco
-                    </h2>
-                </header>
-            </section>
-        </div>
+        <header id="headers">
+            <h2 class="ui center aligned icon header" style="font-size:50px;color:white;">
+                <img src="our_logo.png" style="width: 20%; height:40%;"><br>
+                GoEco<br>
+                <span style="font-size:30px;">Be an Eco Solution</span>
+            </h2><br><br><br><br>
+        </header><br>
         <div class="ui three bottom attached buttons">
             <div class="ui positive button"><a href="https://node-patrick-live-chat.herokuapp.com/">Go Chat</a></div>
             <div class="ui negative button" id="report" data-toggle="modal" data-target="#myModal">Go Report</div>
@@ -81,7 +79,8 @@
             <div class="ui segment">
                 <div class="row">
                     <div class="col-6">
-                        <img id="image1" src="http://northboundasia.com/wp-content/uploads/2018/07/07-26-danny-100th-mandela.jpg">
+                        <img id="image1"
+                            src="http://northboundasia.com/wp-content/uploads/2018/07/07-26-danny-100th-mandela.jpg">
                     </div>
                     <div class="col-6">
                         <div class="ui card">
@@ -115,7 +114,8 @@
             <div class="ui segment">
                 <div class="row">
                     <div class="col-6">
-                        <img id="image1" src="https://www.businessgreen.com/w-images/1196214a-4773-41e0-a32a-fa6305ff09e4/0/illegallogginghi110885-580x358.jpg">
+                        <img id="image1"
+                            src="https://www.businessgreen.com/w-images/1196214a-4773-41e0-a32a-fa6305ff09e4/0/illegallogginghi110885-580x358.jpg">
                     </div>
                     <div class="col-6">
                         <div class="ui card">
@@ -154,7 +154,8 @@
                     <div class="ui slide masked reveal image">
                         <img src="https://egyptianstreets.com/wp-content/uploads/2018/10/43040051_1036463789859935_5696386644756660224_n.jpg"
                             class="visible content">
-                        <img src="http://static.dailymirror.lk/media/images/image_1497466256-3d394f82c5.jpg" class="hidden content">
+                        <img src="http://static.dailymirror.lk/media/images/image_1497466256-3d394f82c5.jpg"
+                            class="hidden content">
                     </div>
                     <div class="content">
                         <a class="header">Garbage On Street </a>
@@ -173,7 +174,8 @@
             <div class="ui segment">
                 <div class="ui card">
                     <div class="ui slide masked reveal image">
-                        <img src="https://sa.kapamilya.com/absnews/abscbnnews/media/2017/news/12/28/trash.jpg" class="visible content">
+                        <img src="https://sa.kapamilya.com/absnews/abscbnnews/media/2017/news/12/28/trash.jpg"
+                            class="visible content">
                         <img src="https://horizon-media.s3-eu-west-1.amazonaws.com/s3fs-public/field/image/sea_garbage.jpg"
                             class="hidden content">
                     </div>
@@ -217,7 +219,8 @@
             <div class="ui segment">
                 <div class="ui card">
                     <div class="image">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1sRF3bz83i-8XUsILo0YR_VChJyqaM4_Pmucpx6vWbZ7jSYVO&s">
+                        <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1sRF3bz83i-8XUsILo0YR_VChJyqaM4_Pmucpx6vWbZ7jSYVO&s">
                     </div>
                     <div class="content">
                         <span class="right floated">
@@ -427,7 +430,7 @@
                                     <a>Developer</a>
                                 </div>
                                 <div class="description">
-                                   Batch 2021 of Passerelles Numeriques
+                                    Batch 2021 of Passerelles Numeriques
                                 </div>
                             </div>
                             <div class="extra content">
@@ -552,12 +555,12 @@
         $('#submitReport').on('click', () => {
             alert("SUBMITTED")
         })
-        $('#head').mouseover(() => {
-            $('#head').css({ "background-color": "white" })
-        })
-        $('#head').mouseleave(() => {
-            $('#head').css({ "background-color": "" })
-        })
+        // $('#head').mouseover(() => {
+        //     $('#head').css({ "background-color": "black" })
+        // })
+        // $('#head').mouseleave(() => {
+        //     $('#head').css({ "background-color": "" })
+        // })
     })
 
 
